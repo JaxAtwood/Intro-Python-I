@@ -31,6 +31,9 @@ a = ["foo", "bar", "baz"]
 
 y = []
 
+for x in range(len(a)):
+    y.append(a[x].upper())
+
 print(y)
 
 # Use a list comprehension to create a list containing only the _even_ elements
@@ -41,4 +44,7 @@ x = input("Enter comma-separated numbers: ").split(',')
 # What do you need between the square brackets to make it work?
 y = []
 
+for i in range(len(x)):
+    y.append(x[i])
+    
 print(y)
